@@ -1,0 +1,66 @@
+html,
+body {
+  font-family: Roboto;
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+:root {
+  --background-color: #366952;
+  --color-white: #ffffff;
+  --color-gray: #b2b2b2;
+  --color-primary: #54c56d;
+}
+
+@media (max-width: 1440px) {
+  html,
+  body {
+    font-size: 62.5%;
+  }
+}
+@media (max-width: 1024px) {
+  html,
+  body {
+    font-size: 60%;
+  }
+}
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 57.5%;
+  }
+}
+@media (max-width: 425px) {
+  html,
+  body {
+    font-size: 55%;
+  }
+}
+@media (max-width: 375px) {
+  html,
+  body {
+    font-size: 52.5%;
+  }
+}
+@media (max-width: 320px) {
+  html,
+  body {
+    font-size: 50%;
+  }
+}
