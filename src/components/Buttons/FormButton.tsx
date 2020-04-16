@@ -6,7 +6,7 @@ const FormButton = styled(Button)`
   width: 100%;
   color: var(--color-white) !important;
   border-radius: 50px !important;
-  font-size: 1.5rem !important;
+  font-size: 2rem !important;
 `;
 
 export default FormButton;

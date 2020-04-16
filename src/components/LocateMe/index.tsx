@@ -34,8 +34,11 @@ const Container = styled.div`
   justify-content: space-between;
   box-shadow: 3px 4px 26px -6px rgba(0, 0, 0, 0.75);
   input {
-    font-size: 1.5rem;
-    padding-left: 1rem;
+    font-size: 2rem;
+    padding: 5px 0px 5px 2rem !important;
+  }
+  input::placeholder {
+    padding: 5px 0 5px;
   }
   button {
     color: var(--color-white);

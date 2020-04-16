@@ -58,7 +58,7 @@ const HeaderWrapper = styled.div`
     }
   }
   @media ${device.mobileL} {
-    margin-top: 5rem;
+    margin-top: 8rem;
     width: 100%;
   }
 `;

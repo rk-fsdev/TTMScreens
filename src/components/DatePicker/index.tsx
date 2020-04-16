@@ -45,6 +45,9 @@ const DatePickerWrapper = styled.div`
     font-size: 2rem;
     text-align: center;
   }
+  input::placeholder {
+    padding: 5px 0 5px;
+  }
   div {
     flex: 1;
   }

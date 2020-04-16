@@ -49,7 +49,7 @@ const GenderRadioGroup = styled(RadioGroup)`
     align-items: center;
   }
   .MuiFormControlLabel-label {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 `;
 
