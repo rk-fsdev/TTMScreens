@@ -15,7 +15,7 @@ const DetailsInfo = (props: Props) => {
   const [activeItem, setActiveItem] = React.useState(0);
 
   return (
-    <ContainerWrapper title="Would you say you are">
+    <ContainerWrapper title="Would you say you are:">
       <DetailList>
         {dummyDetails.map((detail, index) => (
           <ListItem
@@ -47,6 +47,7 @@ const DetailList = styled(List)`
     }
   }
   .active {
+    box-sizing: border-box;
     border: 3px solid var(--color-primary) !important;
   }
 `;

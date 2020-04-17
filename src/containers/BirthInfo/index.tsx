@@ -35,7 +35,7 @@ const BirthInfo = (props: Props) => {
       </GenderRadioGroup>
       <DatePicker></DatePicker>
       <FormButton variant="contained" color="primary" onClick={() => Router.push('/details-info')}>
-        NEXT
+        Next
       </FormButton>
     </ContainerWrapper>
   );

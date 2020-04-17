@@ -7,6 +7,7 @@ const FormButton = styled(Button)`
   color: var(--color-white) !important;
   border-radius: 50px !important;
   font-size: 2rem !important;
+  text-transform: initial !important;
 `;
 
 export default FormButton;

@@ -12,8 +12,21 @@ interface Props {
 
 const ContainerWrapper = (props: Props) => {
   const { children, title, desc = '' } = props;
+  const [innerHeight, setInnerHeight] = React.useState(0);
+
+  React.useEffect(() => {
+    function handleResize() {
+      setInnerHeight(window.innerHeight);
+    }
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return function cleanUp() {
+      window.removeEventListener('resize', handleResize);
+    };
+  });
+
   return (
-    <Container>
+    <Container style={{ height: innerHeight }}>
       <HeaderWrapper>
         <Typography variant="h1" align="center">
           {title}
@@ -27,7 +40,6 @@ const ContainerWrapper = (props: Props) => {
 const Container = styled.div`
   padding: 5rem;
   background-color: var(--background-color);
-  height: 100vh;
   position: relative;
   @media ${device.desktop} {
     display: flex;
